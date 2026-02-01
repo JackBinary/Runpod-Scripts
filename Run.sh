@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e
+
 pip install uv
 uv pip install huggingface_hub hf_transfer
 uv pip install vllm --extra-index-url https://wheels.vllm.ai/rocm/
