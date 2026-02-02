@@ -20,7 +20,7 @@ EXACT_K=${EXACT_K:-128}
 
 pip install uv
 uv pip install huggingface_hub hf_transfer
-uv pip install vllm --extra-index-url https://wheels.vllm.ai/rocm/
+uv pip install vllm --extra-index-url https://wheels.vllm.ai/rocm/0.14.1/rocm700
 hf download ${MODEL}
 git clone https://github.com/JackBinary/DistillKit.git
 cd DistillKit
