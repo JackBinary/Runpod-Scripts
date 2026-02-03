@@ -16,7 +16,8 @@ cmake --build build --config Release -- -j $(nproc)
 pip install huggingface_hub hf_transfer
 
 # Download model
-hf download unsloth/GLM-4.5-Air-GGUF --include "UD-Q8_K_XL/*" --local-dir /workspace/GLM-4.7-GGUF
+hf download unsloth/GLM-4.5-Air-GGUF \
+  --include "UD-Q8_K_XL/GLM-4.5-Air-UD-Q8_K_XL-*.gguf"
 
 # run the model
 /llama.cpp/build/bin/llama-server \
