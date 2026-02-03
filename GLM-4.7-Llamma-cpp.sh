@@ -27,6 +27,5 @@ hf download unsloth/GLM-4.7-GGUF --include "Q6_K/*" --local-dir /workspace/GLM-4
   -fa on \
   -ctk q8_0 \
   -ctv q8_0 \
-  -fit on \
   -ts 1,1 \
   -c 202752
